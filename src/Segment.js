@@ -77,6 +77,7 @@ const SegmentForm = () => {
     try {
       const response = await fetch(webhookUrl, {
         method: "POST",
+        mode: "no-cors",
         headers: {
           "Content-Type": "application/json",
         },
