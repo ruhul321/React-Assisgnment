@@ -72,8 +72,7 @@ const SegmentForm = () => {
     };
 
     console.log("Sending segment data to server:", segmentData);
-    const webhookUrl =
-      "https://webhook.site/a6315034-39b9-47ae-a2d8-128e0f8275f0";
+    const webhookUrl = "/a6315034-39b9-47ae-a2d8-128e0f8275f0";
     try {
       const response = await fetch(webhookUrl, {
         method: "POST",
